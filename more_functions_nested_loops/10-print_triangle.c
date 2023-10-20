@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - checks
+ * print_triangle - checks
  * @size:var
  *
  * Return: 1 if upper, otherwise 0
