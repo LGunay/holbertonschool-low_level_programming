@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 /**
-* reset_to_98 - check the code
+* _puts - prints a string
 * @str:pointer
+*
 * Return: Always 0.
 */
 void _puts(char *str)
@@ -20,4 +21,5 @@ void _puts(char *str)
 	{
 		_putchar(s[j]);
 	}
+	_putchar('\n');
 }
