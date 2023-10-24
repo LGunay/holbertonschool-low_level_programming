@@ -9,12 +9,20 @@
 */
 void puts_half(char *str)
 {
-	int i;
+	int i, a;
 	int l = strlen(str);
 
-	for (i = l / 2; i < l; i++)
+	if (l % 2 == 1)
 	{
-			_putchar(str[i]);
+		a = (l + 1) / 2;
+	}
+	else 
+	{
+		a = l / 2;
+	}
+	for (i = a; i < l; i++)
+	{
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
