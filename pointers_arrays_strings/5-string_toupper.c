@@ -3,9 +3,9 @@
 #include <string.h>
 
 /**
- * reverse_array - reverse an array of integers
+ * string_toupper - reverse an array of integers
  *
- *
+ * @s:var
  *
  * Return: nothing.
  */
