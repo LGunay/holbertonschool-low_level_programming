@@ -9,7 +9,7 @@
 
 char *leet(char *s)
 {
-	int i = 0, j, temp;
+	int i = 0, temp;
 	char h[20];
 
 	h[0] = '4';
