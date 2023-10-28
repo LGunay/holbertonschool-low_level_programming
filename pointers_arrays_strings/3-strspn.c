@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * *_strspn - check the code
+ * _strspn - check the code
  * @s: pointer
  * @accept: pointer
  * Return: Always 0.
