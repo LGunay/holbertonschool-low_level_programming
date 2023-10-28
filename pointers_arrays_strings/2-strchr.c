@@ -14,7 +14,7 @@ char *_strchr(char *s, char c)
 	int i;
 	int l = strlen(s);
 
-	for (i = 0; i <=l; i++)
+	for (i = 0; i <= l; i++)
 	{
 		if (s[i] == c)
 		{
