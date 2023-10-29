@@ -18,13 +18,15 @@ unsigned int _strspn(char *s, char *accept)
 		if (s[i] != 32)
 		{
 			for (j = 0; j < i; j++)
-			{	
+			{
 				if (s[i] == accept[j])
 				{
 					n++;
 				}
 			}
 		}
+		else
+			return (n);
 	}
 	return (n);
 }
