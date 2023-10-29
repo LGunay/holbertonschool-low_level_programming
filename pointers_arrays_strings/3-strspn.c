@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h>
 
 /**
  * _strspn - check the code
@@ -11,7 +10,6 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j, n = 0;
-	unsigned int l = strlen(s);
 
 	for (i = 0; s[i] != 0; i++)
 	{
