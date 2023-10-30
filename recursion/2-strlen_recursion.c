@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  *  _strlen_recursion - fills memory
  * @s: data
@@ -8,7 +7,17 @@
  */
 int _strlen_recursion(char *s)
 {
-	int i = strlen(s);
+	int _strlen_recursion(char *s)
+{
+	int i = 0;
 
-	return (i);
+	if (*s != 0)
+	{
+		i++;
+		return (i + _strlen_recursion(s + 1));
+	}
+	else
+	{
+		return (0);
+	}
 }
