@@ -13,9 +13,16 @@ int _sqrt_recursion(int n)
 		return (0);
 	if (n < 0)
 		return (-1);
-	return (sqrt(n, 1);
+	return (sqrt(n, 1));
 }
-void sqrt (int x, int k)
+/**
+ * sqrt - fills memory
+ * @n: data
+ * @k: num
+ *
+ * Return: square root
+ */
+int sqrt(int x, int k)
 {
 	if (k > ((n / 2) + 1))
 		return (-1);
