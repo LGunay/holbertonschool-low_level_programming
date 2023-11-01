@@ -12,7 +12,7 @@ int _sqrt_recursion(int n)
 		return (0);
 	if (n < 0)
 		return (-1);
-	return (sqrt(n, 1));
+	return (_sqrt(n, 1));
 }
 /**
  * sqrt - fills memory
@@ -21,12 +21,12 @@ int _sqrt_recursion(int n)
  *
  * Return: square root
  */
-int sqrt(int n, int k)
+int _sqrt(int n, int k)
 {
 	if (k > ((n / 2) + 1))
 		return (-1);
 	else if ((n / k) == k && (n % k) == 0)
 		return (k);
 	else
-		return (sqrt(n, k + 1));
+		return (_sqrt(n, k + 1));
 }
