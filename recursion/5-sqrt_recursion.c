@@ -15,7 +15,7 @@ int _sqrt_recursion(int n)
 	return (_sqrt(n, 1));
 }
 /**
- * sqrt - fills memory
+ * _sqrt - fills memory
  * @n: data
  * @k: num
  *
