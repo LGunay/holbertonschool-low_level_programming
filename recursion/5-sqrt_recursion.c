@@ -6,6 +6,7 @@
  *
  * Return: int
  */
+int cahid(int n, int k);
 int _sqrt_recursion(int n)
 {
 	if (n == 0)
