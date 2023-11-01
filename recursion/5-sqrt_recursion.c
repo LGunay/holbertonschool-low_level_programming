@@ -12,21 +12,21 @@ int _sqrt_recursion(int n)
 		return (0);
 	if (n < 0)
 		return (-1);
-	return (_sqrt(n, 1));
+	return (cahid(n, 1));
 }
 /**
- * _sqrt - fills memory
+ * cahid - fills memory
  * @n: data
  * @k: num
  *
  * Return: square root
  */
-int _sqrt(int n, int k)
+int cahid(int n, int k)
 {
 	if (k > ((n / 2) + 1))
 		return (-1);
 	else if ((n / k) == k && (n % k) == 0)
 		return (k);
 	else
-		return (_sqrt(n, k + 1));
+		return (cahid(n, k + 1));
 }
