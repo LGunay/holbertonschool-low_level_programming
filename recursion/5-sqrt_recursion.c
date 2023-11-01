@@ -22,7 +22,7 @@ int _sqrt_recursion(int n)
  *
  * Return: square root
  */
-int sqrt(int x, int k)
+int sqrt(int n, int k)
 {
 	if (k > ((n / 2) + 1))
 		return (-1);
