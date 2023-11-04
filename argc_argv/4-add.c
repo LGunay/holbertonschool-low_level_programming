@@ -12,23 +12,22 @@ int main(int argc, char **argv)
 	int i, j = 0, x;
 	int l;
 
-	if (argc < 2)
+	if (argc < 1)
 	{
 		printf("0\n");
 	}
 	for (i = 1; i < argc; i++)
 	{
 		l = strlen(argv[i]);
-		for (x = 0; x < l; x++)
+		for (; x <= l; x++)
 		{
-			if (**argv >= 47 || **argv <= 58)
-				j = j + atoi(argv[i]);
-			else
+			if (**argv <= 47 || **argv >= 58)
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
+		 j = j + atoi(argv[i]);
 	}
 	printf("%d\n", j);
 	return (0);
