@@ -11,9 +11,11 @@ int main(int argc, char **argv)
 	int i, j = 1;
 
 	if (argc <= 2)
+	{
 		printf("ERROR\n");
-	return (1);
-	for (i = 1; i <= argc; i++)
+		return (1);
+	}
+	for (i = 1; i < argc; i++)
 	{
 		j = j * atoi(*(argv + i));
 	}
