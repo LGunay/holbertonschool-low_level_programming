@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	for (i = 1; i <= argc; i++)
 	{
 		j = j * atoi(argv[i]);
+		printf("%d\n", j);
 	}
-	printf("%d\n", j);
 	return (0);
 }
