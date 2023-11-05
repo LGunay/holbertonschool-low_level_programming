@@ -19,9 +19,9 @@ int main(int argc, char **argv)
 	for (i = 1; i < argc; i++)
 	{
 		l = strlen(argv[i]);
-		for (; x <= l; x++)
+		for (x = 0; x < l; x++)
 		{
-			if (**argv <= 47 || **argv >= 58)
+			if (argv[i][x] <= 47 || argv[i][x] >= 58)
 			{
 				printf("Error\n");
 				return (1);
