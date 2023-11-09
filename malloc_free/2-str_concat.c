@@ -13,8 +13,8 @@ char *str_concat(char *s1, char *s2)
 	char *t;
 	int i, l, n;
 
-	if (s1 == NULL || s2 == NULL)
-		return(NULL);
+	if (s1 == NULL && s2 == NULL)
+		return (NULL);
 	l = strlen(s1) + strlen(s2);
 	n = strlen(s1);
 	t = malloc(sizeof(char) * l + 1);
@@ -24,7 +24,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (i < n)
 			t[i] = s1[i];
-		else 
+		else
 			t[i] = s2[i - n];
 	}
 	t[i] = '\0';
