@@ -2,7 +2,7 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * 1_init_dog - check the code
+ * init_dog - check the code
  * @d: pointer
  * @name: var
  * @age: var
