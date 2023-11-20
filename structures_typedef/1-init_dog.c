@@ -7,13 +7,14 @@
  * @name: var
  * @age: var
  * @owner: var
+ *  Description: Longer descriptioon
  * Return: Always 0.
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d == NULL)
-		printf("OK");
+		exit(0);
 	(*d).name = name;
 	d->age = age;
-	d->owner =owner;
+	d->owner = owner;
 }
