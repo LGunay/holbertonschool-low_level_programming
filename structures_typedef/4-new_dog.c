@@ -12,7 +12,7 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int sizen, sizeo, i;
+	int sizen, sizeo, i, j;
 	dog_t *dog4;
 
 	sizen = strlen(name);
@@ -43,7 +43,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog4);
 		return (NULL);
 	}
-	for (i = 0; i < sizeo; i++)
+	for (j = 0; j < sizeo; j++)
 	{
 		dog4->owner[i] = owner[i];
 	}
