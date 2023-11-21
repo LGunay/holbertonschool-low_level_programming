@@ -12,7 +12,7 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int sizen, sizeo, i, j;
+	int sizen, sizeo, i;
 	dog_t *dog4;
 
 	sizen = strlen(name);
@@ -29,6 +29,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog4->name == NULL)
 	{
 		free(dog4->name);
+		free(dog4->owner);
 		free(dog4);
 		return (NULL);
 	}
@@ -36,6 +37,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		dog4->name[i] = name[i];
 	}
+	dog4->name[i] = '\0';
 	if (dog4->owner == 0)
 	{
 		free(dog4->owner);
@@ -43,9 +45,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog4);
 		return (NULL);
 	}
-	for (j = 0; j < sizeo; j++)
+	for (i = sizen; j < sizeo; j++)
 	{
-		dog4->owner[j] = owner[j];
+		dog4->owner[i] = owner[i];
 	}
+	dog4->owner[i] = '\0';
 	return (dog4);
 }
