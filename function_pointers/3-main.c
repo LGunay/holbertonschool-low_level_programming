@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
@@ -25,12 +25,12 @@ int main(int argc, char *argv[])
 	if (func == NULL)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 	if ((func == op_mod && b == 0) || (func == op_div && b == 0))
 	{
 		printf("Error\n");
-		exit (100);
+		exit(100);
 	}
 	printf("%d\n", func(a, b));
 	return (0);
