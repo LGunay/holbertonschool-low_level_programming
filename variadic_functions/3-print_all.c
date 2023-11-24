@@ -8,10 +8,8 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i = 0, k;
-	char a;
+	int i = 0;
 	char *b;
-	float j;
 	va_list arr;
 
 	va_start(arr, format);
@@ -20,16 +18,13 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				a = va_arg(arr, int);
-				printf("%c", a);
+				printf("%c", va_arg(arr, int));
 				break;
 			case 'i':
-				k = va_arg(arr, int);
-				printf("%d", k);
+				printf("%d", va_arg(arr, int));
 				break;
 			case 'f':
-				j = va_arg(arr, double);
-				printf("%f", j);
+				printf("%f", va_arg(arr, double));
 				break;
 			case 's':
 				b = va_arg(arr, char *);
@@ -43,9 +38,7 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 		if (format[i])
-		{
 			printf(", ");
-		}
 	}
 	va_end(arr);
 	printf("\n");
