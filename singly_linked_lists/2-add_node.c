@@ -3,7 +3,7 @@
 #include "lists.h"
 #include <string.h>
 /**
-  * print_list - lala
+  * add_node - lala
   *
   * @str: list
   * @head: pointer
