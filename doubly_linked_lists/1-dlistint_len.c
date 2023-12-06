@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * dlistint_len - the function that finds length of doubly linked list.
  *
