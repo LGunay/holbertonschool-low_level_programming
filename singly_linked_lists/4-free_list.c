@@ -3,7 +3,7 @@
 #include "lists.h"
 #include <string.h>
 /**
-  * add_node - lala
+  * free_list - lala
   *
   *
   * @head: pointer
@@ -11,4 +11,13 @@
   */
 void free_list(list_t *head)
 {
+	list_t *otherwomen;
 
+	while (head)
+	{
+		otherwomen = head;
+		head = head->next;
+		free(otherwomen->srt);
+		free(otherwommen);
+	}
+}
