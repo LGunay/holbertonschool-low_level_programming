@@ -22,5 +22,5 @@ int sum_dlistint(dlistint_t *head)
 		sum += qwert->n;
 		qwert = qwert->next;
 	}
-	return(sum);
+	return (sum);
 }
