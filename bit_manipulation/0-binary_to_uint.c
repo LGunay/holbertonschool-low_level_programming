@@ -1,3 +1,4 @@
+#include <string.h>
 /**
   * binary_to_uint - binary to unsigned int convertor
   * @b: binary data
