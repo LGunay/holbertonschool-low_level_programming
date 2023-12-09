@@ -1,4 +1,4 @@
 #ifndef hh
-#define hhh
+#define hh
 unsigned int binary_to_uint(const char *b);
 #endif
