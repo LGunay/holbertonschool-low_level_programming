@@ -10,7 +10,7 @@ void print_helper(unsigned long int n)
 		return;
 	}
 	print_helper(n >> 1);
-	_putchar((n | 1) + '0');
+	_putchar((n & 1) + '0');
 }
 /**
   * print_binary - prints binary represantation of integer
