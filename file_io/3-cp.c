@@ -24,7 +24,7 @@ void copyfile(const char *file_from, const char *file_to)
 	fdt = open(file_to, O_TRUNC | O_RDONLY | O_CREAT, 0664);
 	if (fdf == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file%s\n", file_from);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
 	while(r > 0)
@@ -33,12 +33,12 @@ void copyfile(const char *file_from, const char *file_to)
 		w = write(fdt, buff, fdf);
 		if (r == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file%s\n", file_from);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 			exit(98);
 		}
 		if (fdt == -1 || w == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to%s\n", file_to);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 			exit(99);
 		}
 	}
