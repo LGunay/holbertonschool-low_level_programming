@@ -46,6 +46,7 @@ void copyfile(const char *file_from, const char *file_to)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdt);
 		exit(100);
+		free(buff);
 	}
 }
 /**
