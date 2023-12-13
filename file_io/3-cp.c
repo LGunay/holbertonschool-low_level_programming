@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#define BUFFER_SIZE 1024
+#define buffersize 1024
 
 /**
  * copier - copy the content of first argument to another.
@@ -17,7 +17,6 @@
 void copyfile(const char *file_from, const char *file_to)
 {
 	int fdf, fdt, w, r = 1;
-	char buffersize [1024];
 	char *buff;
 
 	buff = malloc(buffersize);
