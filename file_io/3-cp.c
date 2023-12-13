@@ -16,7 +16,7 @@
  */
 void copyfile(const char *file_from, const char *file_to)
 {
-	int fdf, fdt, w, r = 1;
+	int fdf, fdt, w, r = 1, c;
 	char *buff;
 
 	buff = malloc(buffersize);
@@ -42,8 +42,8 @@ void copyfile(const char *file_from, const char *file_to)
 			exit(99);
 		}
 	}
-	close(fdt);
-	if (close(fdt) == -1)
+	c = close(fdt);
+	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdf);
 		exit(100);
