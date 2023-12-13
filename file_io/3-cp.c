@@ -8,7 +8,7 @@
 #define buffersize 1024
 
 /**
- * copier - copy the content of first argument to another.
+ * copyfile - copy the content of first argument to another.
  *
  * @file_from: source file.
  *
@@ -20,14 +20,14 @@ void copyfile(const char *file_from, const char *file_to)
 	char *buff;
 
 	buff = malloc(buffersize);
-	fdf = open(file_from,O_RDONLY);
+	fdf = open(file_from, O_RDONLY);
 	fdt = open(file_to, O_TRUNC | O_RDONLY | O_CREAT, 0664);
 	if (fdf == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-	while(r > 0)
+	while (r > 0)
 	{
 		r = read(fdf, buff, buffersize);
 		w = write(fdt, buff, r);
