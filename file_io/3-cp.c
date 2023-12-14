@@ -26,7 +26,7 @@ void copyfile(const char *file_from, const char *file_to)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-	fdt = open(file_to, O_TRUNC | O_RDONLY | O_CREAT, 0664);
+	fdt = open(file_to, O_TRUNC | O_WRONLY | O_CREAT, 0664);
 	while (r > 0)
 	{
 		r = read(fdf, buff, buffersize);
