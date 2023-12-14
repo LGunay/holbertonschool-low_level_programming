@@ -21,12 +21,12 @@ void copyfile(const char *file_from, const char *file_to)
 
 	buff = malloc(buffersize);
 	fdf = open(file_from, O_RDONLY);
-	fdt = open(file_to, O_TRUNC | O_RDONLY | O_CREAT, 0664);
 	if (fdf == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
+	fdt = open(file_to, O_TRUNC | O_RDONLY | O_CREAT, 0664);
 	while (r > 0)
 	{
 		r = read(fdf, buff, buffersize);
