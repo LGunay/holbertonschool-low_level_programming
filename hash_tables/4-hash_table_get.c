@@ -9,7 +9,7 @@
   */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int index, i;
+	unsigned long int index;
 	hash_node_t *temp;
 
 	if (!key)
@@ -20,7 +20,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	temp = ht->array[index];
 	if (!temp)
 		return (NULL);
-	for (i = 0; i < index; i++)
+	while (temp)
 	{
 		if (!strcmp(temp->key, key))
 		{
