@@ -23,8 +23,10 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	for (i = 0; i == index; i++)
 	{
 		if (!strcmp(temp->key, key))
+		{
 			return (temp->value);
-		temp = temp->next;
+			temp = temp->next;
+		}
 	}
 	return (NULL);
 }
