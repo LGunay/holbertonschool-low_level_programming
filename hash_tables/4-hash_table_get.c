@@ -24,7 +24,11 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	{
 		if (!strcmp(temp->key, key))
 			return (temp->value);
-
+		if (i == index)
+		{
+			temp = temp->next;
+			return (temp->value);
+		}
 	}
 	return (NULL);
 }
